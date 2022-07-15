@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #04AA6D;
+}
+.container {
+  position: relative;
+  
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 60%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  width: 100%;
+  visibility: hidden;
+  transition: .5s ease;
+  background: rgba(76, 175, 80, 0.3);
+  
+}
+
+.container:hover .overlay {
+  visibility: visible;
+  
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.photolist{
+  display: flex;
+  flex-wrap: wrap;
+}
+div.photo{
+  background-color: #008CBA;
+  padding: 0px;
+  margin: 0px;
+  flex:50%;
+}
+@media only screen and (min-width:3000px) {
+  div.photo{
+    flex: 25%;
+  }
+}
+@media only screen and (max-width:1500px) {
+  div.photo{
+    flex: 1000%;
+  }
+}
+.experience{
+
+}
+.line {
+  height: 2px;
+  width: 200px;
+  background: darkcyan;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  
+}
+.allProject{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+
+.abc{
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.abc div{
+  display: flex;
+  align-self:  center;
+}
