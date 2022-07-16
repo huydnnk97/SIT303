@@ -2,12 +2,12 @@
   box-sizing: border-box;
 }
 ul {
+  background-color: #f3f3f3;
+  border: 1px solid #e7e7e7;
+  overflow: hidden;
+  padding: 0;
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
 }
 
 li {
@@ -62,12 +62,10 @@ li a.active {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -91,15 +89,12 @@ div.photo{
     flex: 1000%;
   }
 }
-.experience{
-
-}
 .line {
-  height: 2px;
-  width: 200px;
-  background: darkcyan;
-  margin-top: 1.5rem;
   margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  background: darkcyan;
+  height: 4px;
+  width: 400px; 
   
 }
 .allProject{
