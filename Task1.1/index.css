@@ -86,7 +86,7 @@ div.photo{
 }
 @media only screen and (max-width:1500px) {
   div.photo{
-    flex: 1000%;
+    flex: 100%;
   }
 }
 .line {
